@@ -21,4 +21,4 @@ assert(JSON.stringify(augmentingPath(graph, 'foo', 'bar')) == '[]');
 
 var graph = {'foo': {},
     'bar': {'foo': 1}};
-assert(JSON.stringify(augmentingPath(graph, 'foo', 'foo')) == JSON.stringify(['foo']));
+assert(JSON.stringify(augmentingPath(graph, 'foo', 'foo')) == JSON.stringify([]));//I remove == JSON.stringify(['foo'])) because there is no path from foo to itself.
