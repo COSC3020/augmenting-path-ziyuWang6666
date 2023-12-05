@@ -53,4 +53,5 @@ function augmentingPath(graph, start, end) {
     return depthFirstSearch(adjList, start, end);
 }
 
-// console.log(augmentingPath(graph1, 'foo', 'foo'));
+// Get help from TA
+// https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
