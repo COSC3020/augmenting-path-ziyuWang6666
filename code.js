@@ -1,9 +1,3 @@
- 
-var graph1 =  {'foo': {'boo': 7, 'd': 4},
-'boo': {'e': 3},
-'d': {'bar': 4},
-'e': {'foo': 1},
-'bar': {'foo': 2}};
 class Graph {
     constructor() {
       this.adjList = [];
