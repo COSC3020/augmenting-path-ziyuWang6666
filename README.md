@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12590819&assignment_repo_type=AssignmentRepo)
 # Augmenting Paths
 
 When we talked about the Ford-Fulkerson algorithm to find the maximum flow
@@ -31,3 +32,12 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+#### Answer: The total worst case time complexity is O(V + E), where V is the number of vertices and E is the number of edges.
+
+1. The depthFirstSearch method starts with the start node as the first visited element and then uses a loop to explore the node's neighbor vertices. If the visited list does not include the neighbor vertice, then push it onto the stack and then add it to the path. Return the path until the target node is reached. The worst case could reach O(V + E), where V is the number of vertices and E is the number of edges.
+
+2. The augmenting path operation creates a new graph by iterating each vertice and neighboring vertices in the original graph, which leads to the worst time complexity of O(V+E), where V is the number of vertices and E is the number of edges in the original graph.
+
+Combining the upper steps together, the overall time complexity can be represented as O(V + E).
+
