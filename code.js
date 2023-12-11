@@ -19,7 +19,10 @@ function depthFirstSearch(graph, startNode, targetNode) {
     const visited = new Set();
     const paths = {};
     paths[startNode] = [startNode];
-  
+    
+    if(targetNode === startNode) {
+        return paths[startNode];
+    }
     while (stack.length > 0) {
       const vertex = stack.pop();
       visited.add(vertex);
